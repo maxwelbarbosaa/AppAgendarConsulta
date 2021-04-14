@@ -13,16 +13,3 @@ class Titulo extends StatelessWidget {
     );
   }
 }
-
-class Desenvolvedor extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 1),
-      child: Image(
-        image: AssetImage(
-            'assets/images/desenvolvedor.jpg'),
-      ),
-    );
-  }
-}
