@@ -1,3 +1,4 @@
+import 'package:consultahosp/InicioPage.dart';
 import 'package:consultahosp/LoginPage.dart';
 import 'package:flutter/material.dart';
 import 'package:consultahosp/sobre.dart';
@@ -11,7 +12,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(primarySwatch: Colors.purple),
-      home: Sobre(),
+     
+      initialRoute: '/',
+      routes: {
+        '/': (context) => Login(),
+        '/inicio' : (context) => Inicio(),
+      },
     );
   }
 }
